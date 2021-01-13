@@ -21,8 +21,8 @@ def appointments
 end
 
 def patients
-    appointments.map {|appointment| appointment.patient}.uniq!
-end
+    self.appointments.map {|appointment| appointment.patient }
+  end
 
 
 end

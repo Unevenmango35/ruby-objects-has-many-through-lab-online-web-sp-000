@@ -20,9 +20,9 @@ def appointments
   Appointment.all {|appointment| appointment.doctor == self}
 end
 
-
 def patients
-    Appointment.all {|appointment| appointment.doctor == self}.patient.uniq
+    appointments.map {|appointment| appointment.patient}.uniq!
   end
+
 
 end

@@ -22,7 +22,7 @@ end
 
 def patients
     appointments.map {|appointment| appointment.patient}.uniq!
-  end
+end
 
 
 end

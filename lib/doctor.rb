@@ -21,7 +21,7 @@ def appointments
 end
 
 def patients
-    self.appointments.map {|appointment| appointment.patient }
+    self.appointments.map {|appointment| appointment.patient}
   end
 
 

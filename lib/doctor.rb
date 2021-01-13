@@ -22,7 +22,7 @@ end
 
 
 def patients
-    self.appointments.collect {|appointment| appointment.patient}.uniq
+    Appointment.all {|appointment| appointment.doctor == self}.patient.uniq
   end
 
 end
